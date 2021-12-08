@@ -1,19 +1,29 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+/* eslint-disable react-native/no-inline-styles */
+import React from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
 
-const BuyButton = ({modelo}) => {
-    return (
-        <View style={{
-            backgroundColor: '#d22923', 
-            padding: 10, borderRadius:5,
-            marginVertical: 15,
-            marginEnd: 15, 
-            width: '40%',
-            alignSelf: 'flex-end'
-            }}>
-            <Text style={{color: 'white', fontSize: 16, fontWeight: '700', alignSelf: 'center'}}>{modelo}</Text>
-        </View>
-    )
-}
+const buyButton = ({modelo}) => {
+  return (
+    <View style={{paddingHorizontal: 25}}>
+      <TouchableOpacity
+        style={{
+          backgroundColor: '#d22923',
+          padding: 10,
+          marginVertical: 15,
+          borderRadius: 5,
+          width: '40%',
+        }}>
+        <Text
+          style={{
+            color: 'white',
+            fontSize: 18,
+            fontWeight: '700',
+          }}>
+          {modelo}
+        </Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
-export default BuyButton
+export default buyButton;
