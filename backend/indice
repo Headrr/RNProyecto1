@@ -1,0 +1,4 @@
+Indice de Query registradas.
+
+1. /infoDocente/:run Captura la Informacion del Docente profesor/index.js
+2. /login Login de usuarios registrados
