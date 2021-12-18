@@ -23,6 +23,7 @@ jwts(app, bd);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT)
+console.log(`http://localhost:${PORT}`);
 // app.listen(port, () => {
 //   console.log(`Backend-As_Del_Sur corriendo en http://localhost:${port}`);
 // });

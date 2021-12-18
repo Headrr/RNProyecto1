@@ -8,5 +8,9 @@
   },
   "scripts": {
     "start": "nodemon app.js --port 3001"
+  },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "6.4.1"
   }
 }

@@ -52,6 +52,20 @@ var jwts = (app, bd) => {
   }
   });
 
+  app.get("/getUrl", (req, res) => {
+    try {
+      bd.query(`SELECT * from cloudinary`,
+      function (error, result) {
+        if (error) throw error;
+        res.json(result);
+      }
+    );
+  } catch (error) {
+    res.status(400).json();
+    // res.redirect("/home")
+  }
+  });
+
   app.get('/recetas', (req, res) => {
     const recetas = [
       {
